@@ -9,23 +9,27 @@ body {
 
 header {
     @include bgtxt;
-    height: 10%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
     margin-bottom: 20px;
 }
 
 section {
-    height: 85%;
+    // height: 75%;
+}
+
+
+footer {
+    @include bgtxt;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .menu {
     @include menu-box;
-}
-
-footer {
-    @include bgtxt;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
 }
