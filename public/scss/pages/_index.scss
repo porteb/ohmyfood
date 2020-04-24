@@ -1,0 +1,20 @@
+.grid {
+    @include grid
+}
+
+
+._1 {
+    background: $clr-bg1;
+} 
+
+._2 {
+    background: $clr-bg2;
+}
+
+._3 {
+    background: $clr-bg3;
+}
+
+._4 {
+    background: $clr-bg4;
+}
