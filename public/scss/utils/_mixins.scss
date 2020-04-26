@@ -5,13 +5,13 @@
 
 @mixin grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: center;
 }
 
 @mixin menu-box {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     width: 240px;

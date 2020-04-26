@@ -24,11 +24,16 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  padding: 0 30px;
+  position: sticky;
+  left: auto;
+  right: auto;
+  bottom: 0;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 240px;
@@ -54,7 +59,7 @@ footer {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: center;
 }
 
