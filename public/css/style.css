@@ -41,6 +41,7 @@ footer {
   margin: 20px;
   box-shadow: 0 0 10px 5px #ededed;
   text-align: center;
+  font-size: 1.5rem;
   border-radius: 5px;
 }
 
@@ -55,6 +56,12 @@ footer {
   margin: auto;
   margin-top: 20px;
   border-radius: 8px;
+}
+
+#rest2 {
+  background: linear-gradient(to bottom right, #d5934b, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .grid {
