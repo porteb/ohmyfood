@@ -9,6 +9,8 @@ body {
 header {
   background: #579c87;
   color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +21,8 @@ header {
 footer {
   background: #579c87;
   color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 1.5rem;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -48,6 +52,8 @@ footer {
 .btn {
   background: #579c87;
   color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,8 +64,26 @@ footer {
   border-radius: 8px;
 }
 
+.note {
+  background: linear-gradient(to bottom right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #rest2 {
   background: linear-gradient(to bottom right, #d5934b, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#rest3 {
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#rest4 {
+  background: linear-gradient(to bottom right, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -72,18 +96,26 @@ footer {
 
 ._1 {
   background: #fcdfdb;
+  color: #3c1218;
+  font-family: Ma Shan Zheng;
 }
 
 ._2 {
   background: #fff5fe;
+  color: #c77412;
+  font-family: Redressed;
 }
 
 ._3 {
   background: #f9f9f9;
+  color: #0887fb;
+  font-family: Dancing Script;
 }
 
 ._4 {
   background: #fdfffd;
+  color: #72bf56;
+  font-family: Kaushan Script;
 }
 
 /*# sourceMappingURL=style.css.map */

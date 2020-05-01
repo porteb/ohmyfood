@@ -9,6 +9,8 @@ body {
 
 header {
     @include bgtxt;
+    font-family: Source Sans Pro;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +25,8 @@ section {
 
 footer {
     @include bgtxt;
+    font-family: Source Sans Pro;
+    font-size: 1.5rem;
     height: 60px;
     display: flex;
     justify-content: space-between;

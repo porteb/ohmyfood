@@ -1,5 +1,7 @@
 .btn {
     @include bgtxt;
+    font-family: Source Sans Pro;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,8 +12,26 @@
     border-radius: 8px;
 }
 
-#rest2 {
+.note {
     background: $clr-txtgradient1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#rest2 {
+    background: $clr-txtgradient2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#rest3 {
+    background: $clr-txtgradient3;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#rest4 {
+    background: $clr-txtgradient4;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
