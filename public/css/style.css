@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  max-width: 640px;
   max-height: 100vh;
   margin: auto;
 }
@@ -16,6 +15,11 @@ header {
   align-items: center;
   height: 110px;
   margin-bottom: 20px;
+}
+
+section {
+  max-width: 640px;
+  margin: auto;
 }
 
 footer {
@@ -92,6 +96,10 @@ footer {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 ._1 {

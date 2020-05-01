@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
-    max-width: 640px;
+    // max-width: 640px;
     max-height: 100vh;
     margin: auto;
 }
@@ -19,6 +19,8 @@ header {
 }
 
 section {
+    max-width: 640px;
+    margin: auto;
     // height: 75%;
 }
 
