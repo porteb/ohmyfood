@@ -18,20 +18,27 @@
     -webkit-text-fill-color: transparent;
 }
 
-#rest2 {
+.rest2 {
     background: $clr-txtgradient2;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#rest3 {
+.rest3 {
     background: $clr-txtgradient3;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#rest4 {
+.rest4 {
     background: $clr-txtgradient4;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+footer>p:hover {
+    animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }

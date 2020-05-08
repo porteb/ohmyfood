@@ -1,0 +1,16 @@
+#menu_note {
+    background: $clr-bg1;
+    color : $clr-txtrest1;
+    font-family: Caveat;
+    >.menu_title, .menu_footer {
+        font-family: Ma Shan Zheng;
+        margin: 50px;
+    }
+}
+
+.menu_footer {
+    text-align: center;
+    >span {
+        font-size: 2.5rem;
+    }
+}

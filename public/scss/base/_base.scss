@@ -10,19 +10,19 @@ body {
 header {
     @include bgtxt;
     font-family: Source Sans Pro;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 130px;
     margin-bottom: 20px;
     text-decoration: none;
 }
 
 section {
-    max-width: 640px;
+    max-width: 900px;
     margin: auto;
-    // height: 75%;
+    // height: 75%; 
 }
 
 
@@ -52,4 +52,52 @@ a {
 
 .menu {
     @include menu-box;
+    >p,i{
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 600ms;
+    text-decoration: none;
+    }
+    &:hover{
+    >p,i{
+        opacity: 0.5;
+        transform: scale(1.6);
+        transition: opacity transform ease-in-out 600ms;
+        }
+    }
+}
+
+.choix {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin: 0 80px;
+    
+}
+
+.mouv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 80px;
+}
+
+.sep {
+    max-width: 250px;
+    max-height: 12px;
+    &.flip {
+        transform: scaleX(-1);
+    }
+}
+
+.menu_title {
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    font-size: 3.5rem;
+    >.note {
+        font-size: 5rem;
+    }
 }

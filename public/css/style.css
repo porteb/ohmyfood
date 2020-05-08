@@ -1,18 +1,225 @@
-/* Error: expected selector.
- *   ,
- * 1 | 0.0..0mm@mixin bgtxt{
- *   | ^
- *   '
- *   public\scss\utils\_mixins.scss 1:1  @import
- *   public\scss\main.scss 2:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a   \2577 \a 1 \2502  0.0..0mm@mixin bgtxt{\d\a   \2502  ^\a   \2575 \a   public\\scss\\utils\\_mixins.scss 1:1  @import\a   public\\scss\\main.scss 2:9           root stylesheet";
+@keyframes wiggle {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
+body {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  margin: auto;
+}
+
+header {
+  background: #579c87;
+  color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  background: #579c87;
+  color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 1.5rem;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 30px;
+  position: sticky;
+  left: auto;
+  right: auto;
+  bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 485px;
+  margin: 20px;
+  box-shadow: 0 0 10px 5px #ededed;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.menu > p, .menu i {
+  transform: scale(1);
+  opacity: 1;
+  transition-duration: 600ms;
+  text-decoration: none;
+}
+.menu:hover > p, .menu:hover i {
+  opacity: 0.5;
+  transform: scale(1.6);
+  transition: opacity transform ease-in-out 600ms;
+}
+
+.choix {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin: 0 80px;
+}
+
+.mouv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0 80px;
+}
+
+.sep {
+  max-width: 250px;
+  max-height: 12px;
+}
+.sep.flip {
+  transform: scaleX(-1);
+}
+
+.menu_title {
+  text-align: center;
+  font-size: 3.5rem;
+}
+.menu_title > .note {
+  font-size: 5rem;
+}
+
+.btn {
+  background: #579c87;
+  color: #fdcb46;
+  font-family: Source Sans Pro;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 55px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.note {
+  background: linear-gradient(to bottom right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rest2 {
+  background: linear-gradient(to bottom right, #d5934b, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rest3 {
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rest4 {
+  background: linear-gradient(to bottom right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer > p:hover {
+  animation: wiggle 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+._1 {
+  background: #fcdfdb;
+  color: #3c1218;
+  font-family: Ma Shan Zheng;
+}
+
+._2 {
+  background: #fff5fe;
+  color: #c77412;
+  font-family: Redressed;
+}
+
+._3 {
+  background: #f9f9f9;
+  color: #0887fb;
+  font-family: Dancing Script;
+}
+
+._4 {
+  background: #fdfffd;
+  color: #72bf56;
+  font-family: Kaushan Script;
+}
+
+#menu_note {
+  background: #fcdfdb;
+  color: #3c1218;
+  font-family: Caveat;
+}
+#menu_note > .menu_title, #menu_note .menu_footer {
+  font-family: Ma Shan Zheng;
+  margin: 50px;
+}
+
+.menu_footer {
+  text-align: center;
+}
+.menu_footer > span {
+  font-size: 2.5rem;
+}
+
+#menu_chic {
+  background: #fff5fe;
+  color: #c77412;
+  font-family: Redressed;
+}
+
+#menu_delice {
+  font-family: Dancing Script;
+}
+
+#menu_palette {
+  font-family: Kaushan Script;
+}
+
+/*# sourceMappingURL=style.css.map */
