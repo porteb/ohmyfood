@@ -3,12 +3,13 @@
     font-family: Source Sans Pro;
     font-size: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 300px;
     height: 55px;
     margin: auto;
     margin-top: 20px;
+    padding: 0 10px;
     border-radius: 8px;
 }
 
@@ -36,9 +37,28 @@
     -webkit-text-fill-color: transparent;
 }
 
-footer>p:hover {
-    animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+footer>a:hover{
+    animation: wiggle 1s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translateX(0);
   }
+
+
+  .btn>.dot {
+    display:inline-block;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    margin-right:3px;
+    background:$clr-txtmain;
+    animation: wave 1.3s ease-in-out infinite;
+
+    &:nth-child(2) {
+        animation-delay: -.4s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: -.2s;
+    }
+}
+
+
