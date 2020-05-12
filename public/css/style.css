@@ -145,6 +145,17 @@ a {
   font-size: 5rem;
 }
 
+@media screen and (max-width: 320px) {
+  header {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .menu {
+    margin: 0 10px;
+    width: 300px;
+  }
+}
 @media screen and (max-width: 767px) {
   header {
     width: 100%;
@@ -166,13 +177,16 @@ a {
     visibility: hidden;
   }
 
-  .mouv, h3 {
+  .mouv {
+    margin: 0;
+    text-align: center;
     display: inline-block;
-    justify-content: space-around;
   }
 
-  .choix > p {
-    padding: 0 10px;
+  .choix {
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
   }
 }
 .btn {
