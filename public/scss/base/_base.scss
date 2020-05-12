@@ -1,9 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // max-width: 640px;
-    // max-height: 100vh;
     margin: auto;
 }
 
@@ -39,9 +36,8 @@ footer {
     position: sticky;
     left: auto;
     right: auto;
-    bottom: 0;    
+    bottom: 0;
     // width: 100%;
-
 }
 
 a {
@@ -52,17 +48,22 @@ a {
 
 .menu {
     @include menu-box;
-    >p,i{
-    transform: scale(1);
-    opacity: 1;
-    transition-duration: 600ms;
-    text-decoration: none;
+
+    >p,
+    i {
+        transform: scale(1);
+        opacity: 1;
+        transition-duration: 600ms;
+        text-decoration: none;
     }
-    &:hover{
-    >p,i{
-        opacity: 0.5;
-        transform: scale(1.6);
-        transition: opacity transform ease-in-out 600ms;
+
+    &:hover {
+
+        >p,
+        i {
+            opacity: 0.5;
+            transform: scale(1.6);
+            transition: opacity transform ease-in-out 600ms;
         }
     }
 }
@@ -71,8 +72,8 @@ a {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
-    margin: 0 80px;
-    
+    margin: 0 120px;
+
 }
 
 .mouv {
@@ -81,33 +82,37 @@ a {
     align-items: center;
     font-size: 1.5rem;
     margin: 0 80px;
-    p {
+
+    h3 {
         display: inline-flex;
         position: relative;
+
         &::before {
             content: "";
             position: absolute;
             width: 100%;
             transform: scaleX(0);
-            height: 2px;   
+            height: 3px;
             bottom: 0;
             left: 0;
             background-color: currentColor;
             transform-origin: bottom right;
             transition: transform 250ms ease-out;
-            
+
         }
+
         &:hover::before {
             cursor: pointer;
             transform: scaleX(1);
             transform-origin: bottom left;
-        } 
+        }
     }
 }
 
 .sep {
     max-width: 250px;
     max-height: 12px;
+
     &.flip {
         transform: scaleX(-1);
     }
@@ -119,7 +124,46 @@ a {
     text-align: center;
     // justify-content: center;
     font-size: 3.5rem;
+
     >.note {
         font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    footer {
+        width: 100vw;
+        font-size: 1.2rem;
+        justify-content: space-evenly;
+        padding: 0;
+
+    }
+
+    .sep {
+        visibility: hidden;
+        
+    }
+
+    .mouv,h3 {
+        display: inline-block;
+        justify-content: space-around;
+    }
+
+    .choix {
+        // justify-content: space-between;
+        >p{
+            padding: 0 10px;
+
+        }
     }
 }
