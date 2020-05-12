@@ -19,7 +19,6 @@ header {
 section {
     max-width: 900px;
     margin: auto;
-    // height: 75%; 
 }
 
 
@@ -37,7 +36,6 @@ footer {
     left: auto;
     right: auto;
     bottom: 0;
-    // width: 100%;
 }
 
 a {
@@ -58,7 +56,6 @@ a {
     }
 
     &:hover {
-
         >p,
         i {
             opacity: 0.5;
@@ -112,35 +109,16 @@ a {
 .sep {
     max-width: 250px;
     max-height: 12px;
-
     &.flip {
         transform: scaleX(-1);
     }
 }
 
 .menu_title {
-    // display: flex;
-    // flex-direction: column;
     text-align: center;
-    // justify-content: center;
     font-size: 3.5rem;
-
     >.note {
         font-size: 5rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    header {
-        width: 100%;
-        font-size: 2rem;
-    }
-
-
-    .menu {
-        margin: 0 10px;
-        width: 300px;
     }
 }
 
@@ -152,7 +130,7 @@ a {
     }
 
     section {
-        width: 100%;
+        width: 95%;
     }
 
     footer {
@@ -163,16 +141,20 @@ a {
 
     }
 
+    .menu {
+        width: 300px;
+        margin: 20px 0px;
+        
+    }
     
     .sep {
-        visibility: hidden;
-        
+        display: none;
     }
 
     .mouv {
+        width: 100%;
         margin: 0;
-        text-align: center;
-        display: inline-block;
+        justify-content: center;
     }
 
     .choix {
@@ -180,4 +162,21 @@ a {
         text-align: center;
         flex-direction: column;
     }
+
+    .btn {
+        max-width: 280px;
+        padding: 0;
+    }
+
+    
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .mouv {
+        text-align: center;
+        margin: 0 50px;
+    }
+}
+
+

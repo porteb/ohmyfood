@@ -145,17 +145,6 @@ a {
   font-size: 5rem;
 }
 
-@media screen and (max-width: 320px) {
-  header {
-    width: 100%;
-    font-size: 2rem;
-  }
-
-  .menu {
-    margin: 0 10px;
-    width: 300px;
-  }
-}
 @media screen and (max-width: 767px) {
   header {
     width: 100%;
@@ -163,7 +152,7 @@ a {
   }
 
   section {
-    width: 100%;
+    width: 95%;
   }
 
   footer {
@@ -173,20 +162,36 @@ a {
     padding: 0;
   }
 
+  .menu {
+    width: 300px;
+    margin: 20px 0px;
+  }
+
   .sep {
-    visibility: hidden;
+    display: none;
   }
 
   .mouv {
+    width: 100%;
     margin: 0;
-    text-align: center;
-    display: inline-block;
+    justify-content: center;
   }
 
   .choix {
     margin: 0;
     text-align: center;
     flex-direction: column;
+  }
+
+  .btn {
+    max-width: 280px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mouv {
+    text-align: center;
+    margin: 0 50px;
   }
 }
 .btn {
@@ -239,7 +244,6 @@ footer > a:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 3px;
   background: #fdcb46;
   animation: wave 1.3s ease-in-out infinite;
 }
