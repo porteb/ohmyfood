@@ -81,6 +81,28 @@ a {
     align-items: center;
     font-size: 1.5rem;
     margin: 0 80px;
+    p {
+        display: inline-flex;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;   
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 250ms ease-out;
+            
+        }
+        &:hover::before {
+            cursor: pointer;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        } 
+    }
 }
 
 .sep {

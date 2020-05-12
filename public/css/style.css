@@ -105,6 +105,27 @@ a {
   font-size: 1.5rem;
   margin: 0 80px;
 }
+.mouv p {
+  display: inline-flex;
+  position: relative;
+}
+.mouv p::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 250ms ease-out;
+}
+.mouv p:hover::before {
+  cursor: pointer;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 .sep {
   max-width: 250px;
