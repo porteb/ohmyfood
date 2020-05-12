@@ -183,6 +183,10 @@ footer > a:hover {
   animation-delay: -0.2s;
 }
 
+.mouv p {
+  text-decoration: underline;
+}
+
 .grid {
   display: flex;
   flex-flow: wrap;
