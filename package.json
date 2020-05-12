@@ -4,7 +4,7 @@
   "description": "site web ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./public/scss/main.scss:./public/css/style.css --style expanded",
+    "sass" : "sass --watch ./public/scss/main.scss:./public/css/style.css --style compressed",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "Bastien Porte",
