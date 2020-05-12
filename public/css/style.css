@@ -29,7 +29,7 @@ body {
 header {
   background: #579c87;
   color: #fdcb46;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ section {
 footer {
   background: #579c87;
   color: #fdcb46;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-size: 1.5rem;
   height: 60px;
   display: flex;
@@ -90,7 +90,7 @@ a {
 .menu:hover i {
   opacity: 0.5;
   transform: scale(1.6);
-  transition: opacity transform ease-in-out 600ms;
+  transition: transform opacity ease-in-out 600ms;
 }
 
 .choix {
@@ -197,7 +197,7 @@ a {
 .btn {
   background: #579c87;
   color: #fdcb46;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
@@ -263,25 +263,25 @@ footer > a:hover {
 ._1 {
   background: #fcdfdb;
   color: #3c1218;
-  font-family: Ma Shan Zheng;
+  font-family: "Ma Shan Zheng";
 }
 
 ._2 {
   background: #fff5fe;
   color: #c77412;
-  font-family: Redressed;
+  font-family: "Redressed";
 }
 
 ._3 {
   background: #f9f9f9;
   color: #0887fb;
-  font-family: Dancing Script;
+  font-family: "Dancing Script";
 }
 
 ._4 {
   background: #fdfffd;
   color: #72bf56;
-  font-family: Kaushan Script;
+  font-family: "Kaushan Script";
 }
 
 #menu_note {
@@ -290,7 +290,7 @@ footer > a:hover {
   font-family: Caveat;
 }
 #menu_note > .menu_title, #menu_note .menu_footer {
-  font-family: Ma Shan Zheng;
+  font-family: "Ma Shan Zheng";
   margin: 50px;
 }
 
@@ -304,7 +304,7 @@ footer > a:hover {
 #menu_chic {
   background: #fff5fe;
   color: #c77412;
-  font-family: Redressed;
+  font-family: "Redressed";
 }
 
 .mouv1 {
@@ -321,12 +321,12 @@ footer > a:hover {
 
 #menu_delice {
   background: #f9f9f9;
-  font-family: Dancing Script;
+  font-family: "Dancing Script";
 }
 
 #menu_palette {
   background: #fdfffd;
-  font-family: Kaushan Script;
+  font-family: "Kaushan Script";
 }
 
 /*# sourceMappingURL=style.css.map */

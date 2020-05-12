@@ -6,7 +6,7 @@ body {
 
 header {
     @include bgtxt;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ section {
 
 footer {
     @include bgtxt;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-size: 1.5rem;
     height: 60px;
     display: flex;
@@ -60,7 +60,7 @@ a {
         i {
             opacity: 0.5;
             transform: scale(1.6);
-            transition: opacity transform ease-in-out 600ms;
+            transition: transform opacity ease-in-out 600ms;
         }
     }
 }
