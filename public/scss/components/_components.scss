@@ -37,18 +37,18 @@
     -webkit-text-fill-color: transparent;
 }
 
-footer>a:hover{
-    animation: wiggle 1s cubic-bezier(.36,.07,.19,.97) both infinite;
+footer>a:hover {
+    animation: wiggle 1s cubic-bezier(.36, .07, .19, .97) both infinite;
     transform: translateX(0);
-  }
+}
 
 
-  .btn>.dot {
-    display:inline-block;
-    width:12px;
-    height:12px;
-    border-radius:50%;
-    background:$clr-txtmain;
+.btn>.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $clr-txtmain;
     animation: wave 1.3s ease-in-out infinite;
 
     &:nth-child(2) {
@@ -69,7 +69,9 @@ a {
 .menu {
     @include menu-box;
 
-    >p,h3,i {
+    >p,
+    h3,
+    i {
         transform: scale(1);
         opacity: 1;
         transition-duration: 600ms;
@@ -77,7 +79,10 @@ a {
     }
 
     &:hover {
-        >p,h3,i {
+
+        >p,
+        h3,
+        i {
             opacity: 0.5;
             transform: scale(1.5);
             transition: ease-in-out 600ms;
@@ -129,6 +134,7 @@ a {
 .sep {
     max-width: 250px;
     max-height: 12px;
+
     &.flip {
         transform: scaleX(-1);
     }
@@ -137,8 +143,8 @@ a {
 .menu_title {
     text-align: center;
     font-size: 3.5rem;
+
     >.note {
         font-size: 5rem;
     }
 }
-

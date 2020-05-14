@@ -139,13 +139,17 @@ a {
   font-size: 1.5rem;
   border-radius: 5px;
 }
-.menu > p, .menu h3, .menu i {
+.menu > p,
+.menu h3,
+.menu i {
   transform: scale(1);
   opacity: 1;
   transition-duration: 600ms;
   text-decoration: none;
 }
-.menu:hover > p, .menu:hover h3, .menu:hover i {
+.menu:hover > p,
+.menu:hover h3,
+.menu:hover i {
   opacity: 0.5;
   transform: scale(1.5);
   transition: ease-in-out 600ms;
@@ -238,7 +242,8 @@ a {
   color: #3c1218;
   font-family: Caveat;
 }
-#menu_note > .menu_title, #menu_note .menu_footer {
+#menu_note > .menu_title,
+#menu_note .menu_footer {
   font-family: "Ma Shan Zheng";
   margin: 50px;
 }
