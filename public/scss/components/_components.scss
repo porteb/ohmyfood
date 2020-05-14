@@ -48,7 +48,6 @@ footer>a:hover{
     width:12px;
     height:12px;
     border-radius:50%;
-    // margin-right:3px;
     background:$clr-txtmain;
     animation: wave 1.3s ease-in-out infinite;
 
@@ -60,3 +59,86 @@ footer>a:hover{
         animation-delay: -.2s;
     }
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.menu {
+    @include menu-box;
+
+    >p,h3,i {
+        transform: scale(1);
+        opacity: 1;
+        transition-duration: 600ms;
+        text-decoration: none;
+    }
+
+    &:hover {
+        >p,h3,i {
+            opacity: 0.5;
+            transform: scale(1.5);
+            transition: ease-in-out 600ms;
+        }
+    }
+}
+
+.choix {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin: 0 120px;
+
+}
+
+.mouv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 80px;
+
+    h3 {
+        display: inline-flex;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 250ms ease-out;
+
+        }
+
+        &:hover::before {
+            cursor: pointer;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.sep {
+    max-width: 250px;
+    max-height: 12px;
+    &.flip {
+        transform: scaleX(-1);
+    }
+}
+
+.menu_title {
+    text-align: center;
+    font-size: 3.5rem;
+    >.note {
+        font-size: 5rem;
+    }
+}
+
