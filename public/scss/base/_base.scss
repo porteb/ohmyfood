@@ -47,8 +47,7 @@ a {
 .menu {
     @include menu-box;
 
-    >p,
-    i {
+    >p,h3,i {
         transform: scale(1);
         opacity: 1;
         transition-duration: 600ms;
@@ -56,11 +55,10 @@ a {
     }
 
     &:hover {
-        >p,
-        i {
+        >p,h3,i {
             opacity: 0.5;
-            transform: scale(1.6);
-            transition: transform opacity ease-in-out 600ms;
+            transform: scale(1.5);
+            transition: ease-in-out 600ms;
         }
     }
 }

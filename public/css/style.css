@@ -79,18 +79,16 @@ a {
   font-size: 1.5rem;
   border-radius: 5px;
 }
-.menu > p,
-.menu i {
+.menu > p, .menu h3, .menu i {
   transform: scale(1);
   opacity: 1;
   transition-duration: 600ms;
   text-decoration: none;
 }
-.menu:hover > p,
-.menu:hover i {
+.menu:hover > p, .menu:hover h3, .menu:hover i {
   opacity: 0.5;
-  transform: scale(1.6);
-  transition: transform opacity ease-in-out 600ms;
+  transform: scale(1.5);
+  transition: ease-in-out 600ms;
 }
 
 .choix {
@@ -327,6 +325,13 @@ footer > a:hover {
 #menu_palette {
   background: #fdfffd;
   font-family: "Kaushan Script";
+}
+
+.cgv {
+  text-align: justify;
+}
+.cgv_title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
