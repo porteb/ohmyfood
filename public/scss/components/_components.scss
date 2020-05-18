@@ -1,3 +1,5 @@
+// section prochainement 
+
 .btn {
     @include bgtxt;
     font-family: "Source Sans Pro";
@@ -12,6 +14,8 @@
     padding: 0 10px;
     border-radius: 8px;
 }
+
+// dégradés de couleur des menus
 
 .note {
     background: $clr-txtgradient1;
@@ -37,11 +41,14 @@
     -webkit-text-fill-color: transparent;
 }
 
+// animation boutons du footer
+
 footer>a:hover {
     animation: wiggle 1s cubic-bezier(.36, .07, .19, .97) both infinite;
     transform: translateX(0);
 }
 
+// animation des points " prochainement"
 
 .btn>.dot {
     display: inline-block;
@@ -60,11 +67,14 @@ footer>a:hover {
     }
 }
 
+// couleur des liens
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
+// animation zoom et flou des menus 
 
 .menu {
     @include menu-box;
@@ -84,11 +94,13 @@ a {
         h3,
         i {
             opacity: 0.5;
-            transform: scale(1.5);
+            transform: scale(1.3);
             transition: ease-in-out 600ms;
         }
     }
 }
+
+// mise en forme des choix de plats dans les menus 
 
 .choix {
     display: flex;
@@ -97,6 +109,8 @@ a {
     margin: 0 120px;
 
 }
+
+// animation underline dans les menus
 
 .mouv {
     display: flex;
@@ -130,6 +144,8 @@ a {
         }
     }
 }
+
+// mise en forme des séparateurs
 
 .sep {
     max-width: 250px;

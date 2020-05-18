@@ -1,3 +1,5 @@
+// animation des boutons du footer
+
 @keyframes wiggle {
 
   10%,
@@ -21,6 +23,8 @@
     transform: translateX(6px);
   }
 }
+
+// animation des points "prochainement"
 
 @keyframes wave {
 

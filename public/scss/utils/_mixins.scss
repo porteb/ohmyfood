@@ -1,13 +1,19 @@
+// Couleurs principales texte et fond du site
+
 @mixin bgtxt {
     background: $clr-bgmain;
     color: $clr-txtmain;
 }
+
+// mise en forme de la section page d'accueil
 
 @mixin grid {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
+
+// mise en forme des tuiles page d'accueil
 
 @mixin menu-box {
     display: flex;
